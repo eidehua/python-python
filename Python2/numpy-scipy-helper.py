@@ -13,3 +13,6 @@ for j in range(U.shape[1]-1, -1, -1):
   x[j] = y[j]/U[j,j]
   for i in range(0, j):
     y[i] = y[i] - U[i,j]*x[j]
+
+A = np.random.randn(2, 2)
+v = np.random.randn(n)
