@@ -16,3 +16,9 @@ for j in range(U.shape[1]-1, -1, -1):
 
 A = np.random.randn(2, 2)
 v = np.random.randn(n)
+
+#testing numpy's dimensionality with arithmetic)
+C = np.array([2,3])
+D = C - 5
+print C
+print D
