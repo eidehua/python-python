@@ -22,3 +22,7 @@ C = np.array([2,3])
 D = C - 5
 print C
 print D
+
+#numpy elementwise flexibility
+plot_image_freq = np.abs(plot_image_freq) #element absolute value
+plot_image_freq = plot_image_freq + 1.0e-12 #elementwise scalar addition
