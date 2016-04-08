@@ -31,3 +31,13 @@ plot_image_freq = plot_image_freq + 1.0e-12 #elementwise scalar addition
 jac = np.zeros((5,5))
 first_row = np.array([1,2,3,4,5])
 jac[:,0] = first_row
+
+#allocating to sub-matrix
+DFT = np.array([[ 1,2,3,4],
+               [ 5,6,7,8],
+               [ 9,10,11,12]])
+small =DFT[0:2,0:3] #2 x 3-> rows 0,1 & cols 0,1,2
+zeroes = np.zeros((5,5))
+print(zeroes)
+zeroes[0:2,0:3] = small
+print(zeroes)
