@@ -26,3 +26,8 @@ print D
 #numpy elementwise flexibility
 plot_image_freq = np.abs(plot_image_freq) #element absolute value
 plot_image_freq = plot_image_freq + 1.0e-12 #elementwise scalar addition
+
+#column/row wise
+jac = np.zeros((5,5))
+first_row = np.array([1,2,3,4,5])
+jac[:,0] = first_row
