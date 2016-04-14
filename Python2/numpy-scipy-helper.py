@@ -41,3 +41,9 @@ zeroes = np.zeros((5,5))
 print(zeroes)
 zeroes[0:2,0:3] = small
 print(zeroes)
+
+b=1
+a=0
+tol = 10**-6
+np.log2(b-a/tol)
+#iterations of bisection method on the interval [a,b] needed to converge to the tolerance level tol
