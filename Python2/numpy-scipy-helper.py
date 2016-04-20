@@ -47,3 +47,14 @@ a=0
 tol = 10**-6
 np.log2(b-a/tol)
 #iterations of bisection method on the interval [a,b] needed to converge to the tolerance level tol
+
+
+#SCIPY
+
+  #Scipy special library 
+
+    #grab our weights and nodes
+    ell = sps.legendre(n).weights
+    nodes = ell[:,0]
+    weights = ell[:,1]
+
