@@ -49,12 +49,4 @@ np.log2(b-a/tol)
 #iterations of bisection method on the interval [a,b] needed to converge to the tolerance level tol
 
 A[1:-1] #gets elements A[1] to A [n-1], if A is a numpy array of size n
-#SCIPY
-
-  #Scipy special library 
-
-    #grab our weights and nodes
-    ell = sps.legendre(n).weights
-    nodes = ell[:,0]
-    weights = ell[:,1]
 
