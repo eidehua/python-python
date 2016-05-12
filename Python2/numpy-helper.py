@@ -50,3 +50,6 @@ np.log2(b-a/tol)
 
 A[1:-1] #gets elements A[1] to A [n-1], if A is a numpy array of size n
 
+A = np.array([ [1,2],[3,4] ])
+B = np.array([ [4,5],[6,7] ])
+C = np.hstack((A,B)) # result should be [[1,2,3,4],[4,5,6,7]]
